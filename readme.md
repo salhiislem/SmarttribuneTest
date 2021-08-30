@@ -44,7 +44,9 @@ Status value is restricted to "draft" or "published"
 
 ### Download the project
 
-Explain here how you can download your project 
+```bash
+git clone https://github.com/salhiislem/SmarttribuneTest.git
+```
 
 ---
 
@@ -70,3 +72,19 @@ docker-compose up -d
 4. Open a browser and go to :
 - [symfony App](http://127.0.0.1:8080/) => 127.0.0.1:8080 for access to our Symfony application 
 - [phpMyAdmin](http://127.0.0.1:8888/) => 127.0.0.1:8888 for access to our phpMyAdmin (_login: root, no password_)
+
+#### Step 03 : 
+
+1. Continue with your terminal, and tape : 
+```bash
+docker exec -it www_docker_symfony bash
+```
+2. Go into the symfony folder : 
+```bash
+cd project/
+```
+3. Use compose to install vendor 
+```bash
+composer install 
+```
+4. You can go refresh in your navigator your symfony App : symfony App](http://127.0.0.1:8080/)
